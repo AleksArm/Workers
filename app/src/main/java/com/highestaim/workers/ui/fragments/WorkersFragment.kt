@@ -27,6 +27,8 @@ class WorkersFragment : BaseFragment() {
         setAddToItemClickListener()
 
         disableToolbarBackButton()
+
+        setToolbarTitle(getString(R.string.app_name))
     }
 
     private fun initData() {
