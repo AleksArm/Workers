@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_6sdp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="@dimen/_25sdp"
         android:background="@drawable/border_style_white"
         android:enabled="false"
         android:padding="10dp"
@@ -31,7 +31,7 @@
         android:layout_height="38dp"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="@dimen/_25sdp"
         android:layout_marginEnd="@dimen/_6sdp"
         android:background="@drawable/border_style_white"
         android:src="@drawable/ic_edit"
@@ -111,5 +111,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ageEditText"
         app:layout_constraintTop_toBottomOf="@+id/salaryEditImageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/workerNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:text="@string/salary"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/salaryEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workerNameEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ageEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salaryEditText"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

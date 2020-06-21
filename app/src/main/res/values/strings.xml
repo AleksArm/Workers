@@ -4,4 +4,7 @@
     <string name="please_enter_correct_salary">Please Enter Correct Salary</string>
     <string name="please_enter_correct_age">Please Enter Correct Age</string>
     <string name="something_went_wrong">Oops Something went wrong</string>
+    <string name="name">Name</string>
+    <string name="salary">Salary</string>
+    <string name="age">Age</string>
 </resources>
