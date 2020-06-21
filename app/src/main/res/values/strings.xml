@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Workers</string>
+    <string name="please_enter_name">Please Enter Correct Name</string>
+    <string name="please_enter_correct_salary">Please Enter Correct Salary</string>
+    <string name="please_enter_correct_age">Please Enter Correct Age</string>
+    <string name="something_went_wrong">Oops Something went wrong</string>
+</resources>

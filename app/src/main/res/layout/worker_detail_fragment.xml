@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/workerNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border_style_white"
+        android:enabled="false"
+        android:padding="10dp"
+        android:singleLine="true"
+        tools:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/nameEditImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/nameEditImageView"
+        style="?android:buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@drawable/border_style_white"
+        android:src="@drawable/ic_edit"
+        android:tag="Edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/workerNameEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/salaryEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/border_style_white"
+        android:enabled="false"
+        android:padding="10dp"
+        android:singleLine="true"
+        tools:text="John Doe"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintEnd_toStartOf="@+id/salaryEditImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workerNameEditText" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/salaryEditImageView"
+        style="?android:buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@drawable/border_style_white"
+        android:src="@drawable/ic_edit"
+        android:tag="Edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salaryEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditImageView" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ageEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/border_style_white"
+        android:enabled="false"
+        android:padding="10dp"
+        android:singleLine="true"
+        tools:text="John Doe"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/ageEditImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salaryEditText" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ageEditImageView"
+        style="?android:buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@drawable/border_style_white"
+        android:src="@drawable/ic_edit"
+        android:tag="Edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageEditText"
+        app:layout_constraintTop_toBottomOf="@+id/salaryEditImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
