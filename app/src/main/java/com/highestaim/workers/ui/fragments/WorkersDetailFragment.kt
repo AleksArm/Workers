@@ -24,7 +24,7 @@ class WorkersDetailFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         workersUpdateViewModel = ViewModelProvider(this).get(WorkersUpdateViewModel::class.java)
-        initUserInfo()
+        initWorkerInfo()
         setOnEditNameClickListener()
         setOnEditSalaryClickListener()
         setOnEditAgeClickListener()
@@ -36,7 +36,7 @@ class WorkersDetailFragment : BaseFragment() {
         workerInfo?.name?.let { setToolbarTitle(it) }
     }
 
-    private fun initUserInfo() {
+    private fun initWorkerInfo() {
         nameEditText?.setText(workerInfo?.name)
         salaryEditText?.setText(workerInfo?.salary)
         ageEditText?.setText(workerInfo?.age)
