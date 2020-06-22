@@ -14,7 +14,7 @@ import javax.inject.Singleton
 @Component(modules = [AppModule::class,ServicesModule::class, RepositoriesModule::class])
 interface AppComponent {
 
-    fun inject(trendingRepository: WorkersRepository)
+    fun inject(workerRepository: WorkersRepository)
 
     fun inject(viewModel: WorkersViewModel)
 

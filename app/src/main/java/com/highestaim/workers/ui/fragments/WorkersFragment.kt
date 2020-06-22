@@ -24,7 +24,7 @@ class WorkersFragment : BaseFragment() {
         workersViewModel = ViewModelProvider(this).get(WorkersViewModel::class.java)
         initRecyclerView()
         initData()
-        setAddToItemClickListener()
+        setWorkerClickListener()
 
         disableToolbarBackButton()
 
@@ -47,7 +47,7 @@ class WorkersFragment : BaseFragment() {
         workersRecyclerView?.initRecyclerView(context, workersAdapter)
     }
 
-    private fun setAddToItemClickListener() {
+    private fun setWorkerClickListener() {
         workersAdapter.onItemClick = {
             val bundle = Bundle()
             bundle.putSerializable("worker", it)

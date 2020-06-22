@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/workerNameEditText"
+        android:id="@+id/nameEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_6sdp"
@@ -37,7 +37,7 @@
         android:src="@drawable/ic_edit"
         android:tag="Edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/workerNameEditText"
+        app:layout_constraintStart_toEndOf="@+id/nameEditText"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toStartOf="@+id/salaryEditImageView"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/workerNameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/salaryEditImageView"
@@ -120,7 +120,7 @@
         android:layout_marginBottom="@dimen/_3sdp"
         android:text="@string/name"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/workerNameEditText"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -135,7 +135,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/salaryEditText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/workerNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView

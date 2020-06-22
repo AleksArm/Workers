@@ -37,7 +37,7 @@ class WorkersDetailFragment : BaseFragment() {
     }
 
     private fun initUserInfo() {
-        workerNameEditText?.setText(workerInfo?.name)
+        nameEditText?.setText(workerInfo?.name)
         salaryEditText?.setText(workerInfo?.salary)
         ageEditText?.setText(workerInfo?.age)
     }
@@ -45,11 +45,11 @@ class WorkersDetailFragment : BaseFragment() {
 
     private fun setOnEditNameClickListener() {
         nameEditImageView?.setOnClickListener {
-            workerNameEditText?.length()?.let { workerNameEditText?.setSelection(it) }
+            nameEditText?.length()?.let { nameEditText?.setSelection(it) }
 
-            if (checkState(workerNameEditText,nameEditImageView)) {
-                if (Validator.isValidUserName(workerNameEditText?.text.toString().trim())) {
-                    workerInfo?.id?.let { changeName(workerNameEditText?.text.toString().trim(), it) }
+            if (checkState(nameEditText,nameEditImageView)) {
+                if (Validator.isValidUserName(nameEditText?.text.toString().trim())) {
+                    workerInfo?.id?.let { changeName(nameEditText?.text.toString().trim(), it) }
                 } else {
                     activity?.toast(R.string.please_enter_name)
                 }

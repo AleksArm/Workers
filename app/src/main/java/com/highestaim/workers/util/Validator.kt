@@ -18,7 +18,7 @@ object Validator {
 
     fun isValidAge(age: String?): Boolean {
         age?.let {
-            return !(it.isEmpty() || it.toDouble() <= 0 || it.toDouble() > 80)
+            return !(it.isEmpty() || it.toDouble() <= 17 || it.toDouble() > 64)
         }
         return false
     }

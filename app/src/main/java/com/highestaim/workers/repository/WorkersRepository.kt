@@ -120,7 +120,7 @@ class WorkersRepository {
                 .subscribe(
                     object : DisposableCompletableObserver() {
                         override fun onComplete() {
-                            println("Name is update")
+                            println("Name is updated")
                             getWorkersFromDb()
                         }
 
